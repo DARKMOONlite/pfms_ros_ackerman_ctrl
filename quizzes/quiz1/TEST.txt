@@ -1,0 +1,152 @@
+---------------------------------------------------------------------
+ A1 
+---------------------------------------------------------------------
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/src/gtest/libgtest.a  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz1/a1/build
+[ 16%] Building CXX object marking/CMakeFiles/personMarking.dir/__/person.cpp.o
+[ 33%] Linking CXX static library libpersonMarking.a
+[ 33%] Built target personMarking
+[ 50%] Building CXX object marking/CMakeFiles/processingMarking.dir/__/processing.cpp.o
+[ 66%] Linking CXX static library libprocessingMarking.a
+[ 66%] Built target processingMarking
+[ 83%] Building CXX object marking/CMakeFiles/markingTest.dir/utest.cpp.o
+[100%] Linking CXX executable markingTest
+[100%] Built target markingTest
+---------------------------------------------------------------------
+Running tests...
+Test project /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz1/a1/build
+    Start 1: Q0A1
+1/1 Test #1: Q0A1 .............................***Failed    0.00 sec
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
+
+The following tests FAILED:
+	  1 - Q0A1 (Failed)
+Makefile:90: recipe for target 'test' failed
+---------------------------------------------------------------------
+**********************************************************************
+[==========] Running 4 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from ClassTest
+[ RUN      ] ClassTest.CreateObject
+[       OK ] ClassTest.CreateObject (0 ms)
+[----------] 1 test from ClassTest (0 ms total)
+
+[----------] 3 tests from FunctionTest
+[ RUN      ] FunctionTest.CheckVacinated
+[       OK ] FunctionTest.CheckVacinated (0 ms)
+[ RUN      ] FunctionTest.DetectOldest
+/home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz1/a1/marking/utest.cpp:44: Failure
+      Expected: oldest.size()
+      Which is: 1
+To be equal to: 2
+[  FAILED  ] FunctionTest.DetectOldest (0 ms)
+[ RUN      ] FunctionTest.DetectVaccineEligibility
+[       OK ] FunctionTest.DetectVaccineEligibility (0 ms)
+[----------] 3 tests from FunctionTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 2 test cases ran. (1 ms total)
+[  PASSED  ] 3 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] FunctionTest.DetectOldest
+
+ 1 FAILED TEST
+---------------------------------------------------------------------
+ A2 
+---------------------------------------------------------------------
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/src/gtest/libgtest.a  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz1/a2/build
+**********************************************************************
+Making tests distributed with quiz
+----------------------------------------------------------------------
+[ 14%] Building CXX object marking/CMakeFiles/shapesTesting.dir/__/shape.cpp.o
+[ 28%] Building CXX object marking/CMakeFiles/shapesTesting.dir/__/rectangle.cpp.o
+[ 42%] Linking CXX static library libshapesTesting.a
+[ 42%] Built target shapesTesting
+[ 57%] Building CXX object marking/CMakeFiles/processingTesting.dir/__/processing.cpp.o
+[ 71%] Linking CXX static library libprocessingTesting.a
+[ 71%] Built target processingTesting
+[ 85%] Building CXX object marking/CMakeFiles/selfTest.dir/utest.cpp.o
+[100%] Linking CXX executable selfTest
+[100%] Built target selfTest
+----------------------------------------------------------------------
+Making marking 
+----------------------------------------------------------------------
+Consolidate compiler generated dependencies of target shapesTesting
+[ 42%] Built target shapesTesting
+Consolidate compiler generated dependencies of target processingTesting
+[ 71%] Built target processingTesting
+[ 85%] Building CXX object marking/CMakeFiles/markingTest.dir/utest.cpp.o
+[100%] Linking CXX executable markingTest
+[100%] Built target markingTest
+----------------------------------------------------------------------
+Running all tests that have compiled
+---------------------------------------------------------------------
+Running tests...
+Test project /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz1/a2/build
+    Start 1: Q1A2_1
+1/2 Test #1: Q1A2_1 ...........................   Passed    0.00 sec
+    Start 2: Q1A2_2
+2/2 Test #2: Q1A2_2 ...........................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.00 sec
+---------------------------------------------------------------------
+Executing tests distributed with quiz
+---------------------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ContainerTest
+[ RUN      ] ContainerTest.RemoveElements
+[       OK ] ContainerTest.RemoveElements (0 ms)
+[----------] 1 test from ContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+---------------------------------------------------------------------
+Executing marking tests v1 (constructor did not take description)
+---------------------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ContainerTest
+[ RUN      ] ContainerTest.RemoveElements
+[       OK ] ContainerTest.RemoveElements (0 ms)
+[----------] 1 test from ContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+---------------------------------------------------------------------

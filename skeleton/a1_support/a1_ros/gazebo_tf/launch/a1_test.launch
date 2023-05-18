@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!--node pkg="rviz" type="rviz" name="test_viz" args="-d $(find gazebo_tf)/rviz/multi.rviz" /-->
+
+  <node pkg="gazebo_tf" type="ugv_comms" name="ugv_comms" />
+  <node pkg="gazebo_tf" type="uav_comms" name="uav_comms" />
+  <node pkg="gazebo_tf" type="goals" name="goals" />
+  <node pkg="gazebo_tf" type="test_odo" name="test_odo" respawn="true" />
+
+</launch>

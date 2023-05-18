@@ -1,0 +1,21 @@
+actions: []
+authors: Alen Alempijevic <Alen.Alempijevic@uts.edu.au>
+brief: ''
+bugtracker: ''
+depends:
+- roslib
+- nav_msgs
+- roscpp
+- catkin
+- std_msgs
+- message_runtime
+- rosbag
+- sensor_msgs
+description: Skeleton code for Assignment 3
+license: MIT
+maintainers: Alen Alempijevic <Alen.Alempijevic@uts.edu.au>
+msgs: []
+package_type: package
+repo_url: ''
+srvs: []
+url: ''

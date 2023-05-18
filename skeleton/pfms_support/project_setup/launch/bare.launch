@@ -1,0 +1,10 @@
+<!-- -*- mode: XML -*- -->
+
+<launch>
+
+    <node name="stageros" pkg="stage_ros" type="stageros" cwd="node" args="$(find project_setup)/worlds/uoa_robotics_lab.world" output="screen"/>  
+
+    <node name="local_map" pkg="local_map" type="local_map" cwd="node" args="/local_map/scan:=/robot_0/base_scan _map_width:=200 _map_height:=200 _map_resolution:=0.1" output="screen"/>
+
+</launch>
+

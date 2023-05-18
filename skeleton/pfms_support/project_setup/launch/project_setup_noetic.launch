@@ -1,0 +1,22 @@
+<!-- -*- mode: XML -*- -->
+
+<launch>
+
+    <arg name="node_start_delay" default="3.0" /> 
+
+    <node name="stageros" pkg="stage_ros" type="stageros" cwd="node" args="$(find project_setup)/worlds/sparse_pfms.world /robot_0/odom:=/robot_0/fix_odom /robot_1/odom:=/robot_1/fix_odom /robot_0/base_scan:=/robot_0/fix_base_scan" output="screen"/>
+
+    <node name="local_map" pkg="local_map" type="local_map" cwd="node" args="/local_map/scan:=/robot_0/base_scan _map_width:=200 _map_height:=200 _map_resolution:=0.1" output="screen"/>
+
+    <node name="odo_republish_robot_0" pkg="project_setup" type="odo_republish" cwd="node" args="_robot:=robot_0" output="screen"/>
+    <node name="laser_republish_robot_0" pkg="project_setup" type="laser_republish" cwd="node" args="_robot:=robot_0" output="screen"/>
+    <node name="odo_republish_robot_1" pkg="project_setup" type="odo_republish" cwd="node" args="_robot:=robot_1" output="screen"/>
+
+    <node name="robot_0_tf" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 1 world robot_0/odom 100" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/>
+    <node name="robot_1_tf" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 1 world robot_1/odom 100" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/>
+
+
+
+
+</launch>
+

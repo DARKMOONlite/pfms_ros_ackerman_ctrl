@@ -1,0 +1,19 @@
+actions: []
+authors: Alen Alempijevic <Alen.Alempijevic@uts.edu.au>
+brief: ''
+bugtracker: ''
+depends:
+- message_generation
+- std_msgs
+- geometry_msgs
+- roslib
+- message_runtime
+- catkin
+description: 'support package for 41012 : A3 Individual Project Assignment'
+license: TODO
+maintainers: Alen Alempijevic <Alen.Alempijevic@uts.edu.au>
+msgs: []
+package_type: package
+repo_url: ''
+srvs: []
+url: TODO

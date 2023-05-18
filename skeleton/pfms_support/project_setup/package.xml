@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>project_setup</name>
+  <version>0.1.0</version>
+  <description>ROS Message and Service definitions, and setup for 41012 - Individual Project Assignment</description>
+  <maintainer email="Alen.Alempijevic@uts.edu.au">Alen Alempijevic</maintainer>
+  <author email="Alen.Alempijevic@uts.edu.au">Alen Alempijevic</author>
+  <url type="website">TODO</url>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <export>
+  </export>
+</package>

@@ -1,0 +1,169 @@
+---------------------------------------------------------------------
+ A1 
+---------------------------------------------------------------------
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenCV: /usr (found version "3.2.0") 
+-- OpenCV version 3 
+-- Looking for libray in /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz3/a1/dep/lib/opencv3
+-- Found GTest: /usr/src/gtest/libgtest.a  
+-- The include for simulator is /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz3/a1/dep/include
+-- The include for simulator is /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz3/a1/dep/include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz3/a1/build
+[ 16%] Building CXX object CMakeFiles/analysis.dir/analysis.cpp.o
+[ 33%] Linking CXX static library libanalysis.a
+[ 33%] Built target analysis
+[ 50%] Building CXX object CMakeFiles/tf2.dir/tf2.cpp.o
+[ 66%] Linking CXX static library libtf2.a
+[ 66%] Built target tf2
+[ 83%] Building CXX object marking/CMakeFiles/markingTest.dir/utest2.cpp.o
+[100%] Linking CXX executable markingTest
+[100%] Built target markingTest
+**********************************************************************
+Making tests distributed with quiz
+----------------------------------------------------------------------
+Consolidate compiler generated dependencies of target analysis
+[ 33%] Built target analysis
+Consolidate compiler generated dependencies of target tf2
+[ 66%] Built target tf2
+[ 83%] Building CXX object marking/CMakeFiles/selfTest.dir/utest.cpp.o
+[100%] Linking CXX executable selfTest
+[100%] Built target selfTest
+----------------------------------------------------------------------
+Making marking test
+----------------------------------------------------------------------
+[ 33%] Built target analysis
+[ 66%] Built target tf2
+Consolidate compiler generated dependencies of target markingTest
+[100%] Built target markingTest
+----------------------------------------------------------------------
+Executing self Test
+---------------------------------------------------------------------
+[==========] Running 2 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from Transforms
+[ RUN      ] Transforms.Local2Global
+[       OK ] Transforms.Local2Global (0 ms)
+[----------] 1 test from Transforms (0 ms total)
+
+[----------] 1 test from Analysis
+[ RUN      ] Analysis.Time2Impact
+rotation: 0.597289
+translation: 78.9833
+rotation: 1.4985
+translation: 23.4949
+rotation: 1.3567
+translation: 55.4805
+rotation: 2.90179
+translation: 39.061
+rotation: 2.76813
+translation: 45.0812
+[       OK ] Analysis.Time2Impact (0 ms)
+[----------] 1 test from Analysis (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 2 test cases ran. (0 ms total)
+[  PASSED  ] 2 tests.
+---------------------------------------------------------------------
+Executing marking test
+---------------------------------------------------------------------
+[==========] Running 2 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from Transform
+[ RUN      ] Transform.Global2Local
+[       OK ] Transform.Global2Local (0 ms)
+[----------] 1 test from Transform (0 ms total)
+
+[----------] 1 test from Analysis
+[ RUN      ] Analysis.ExportGraph
+[       OK ] Analysis.ExportGraph (0 ms)
+[----------] 1 test from Analysis (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 2 test cases ran. (1 ms total)
+[  PASSED  ] 2 tests.
+---------------------------------------------------------------------
+ A2 
+---------------------------------------------------------------------
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Looking for libray in /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz3/a2/dep
+-- Found GTest: /usr/src/gtest/libgtest.a  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz3/a2/build
+**********************************************************************
+Making tests distributed with quiz
+----------------------------------------------------------------------
+[ 25%] Building CXX object CMakeFiles/analysis.dir/analysis.cpp.o
+[ 50%] Linking CXX static library libanalysis.a
+[ 50%] Built target analysis
+[ 75%] Building CXX object marking/CMakeFiles/selfTest.dir/utest.cpp.o
+[100%] Linking CXX executable selfTest
+[100%] Built target selfTest
+----------------------------------------------------------------------
+Making marking test
+----------------------------------------------------------------------
+Consolidate compiler generated dependencies of target analysis
+[ 50%] Built target analysis
+[ 75%] Building CXX object marking/CMakeFiles/markingTest.dir/utest2.cpp.o
+[100%] Linking CXX executable markingTest
+[100%] Built target markingTest
+----------------------------------------------------------------------
+---------------------------------------------------------------------
+Executing tests distributed with quiz
+---------------------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from RadarTest
+[ RUN      ] RadarTest.MinRangeTiming
+[       OK ] RadarTest.MinRangeTiming (10023 ms)
+[----------] 1 test from RadarTest (10023 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (10023 ms total)
+[  PASSED  ] 1 test.
+---------------------------------------------------------------------
+Executing marking test
+---------------------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from RadarTest
+[ RUN      ] RadarTest.MaxRangeTiming
+[       OK ] RadarTest.MaxRangeTiming (20024 ms)
+[----------] 1 test from RadarTest (20024 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (20024 ms total)
+[  PASSED  ] 1 test.

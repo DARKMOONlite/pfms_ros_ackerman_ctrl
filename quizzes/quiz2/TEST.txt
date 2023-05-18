@@ -1,0 +1,165 @@
+---------------------------------------------------------------------
+ A1 
+---------------------------------------------------------------------
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenCV: /usr (found version "3.2.0") 
+-- Looking for libray in /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz2/a1/dep
+-- Found GTest: /usr/src/gtest/libgtest.a  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz2/a1/build
+**********************************************************************
+Making tests distributed with quiz
+----------------------------------------------------------------------
+[ 16%] Building CXX object CMakeFiles/displayrace.dir/display_race.cpp.o
+[ 33%] Linking CXX static library libdisplayrace.a
+[ 33%] Built target displayrace
+[ 50%] Building CXX object CMakeFiles/analysis.dir/analysis.cpp.o
+[ 66%] Linking CXX static library libanalysis.a
+[ 66%] Built target analysis
+[ 83%] Building CXX object marking/CMakeFiles/selfTest.dir/utest.cpp.o
+[100%] Linking CXX executable selfTest
+[100%] Built target selfTest
+----------------------------------------------------------------------
+Making marking test
+----------------------------------------------------------------------
+[ 12%] Building CXX object marking/CMakeFiles/mockcar.dir/mock/carmock.cpp.o
+[ 25%] Linking CXX static library libmockcar.a
+[ 25%] Built target mockcar
+Consolidate compiler generated dependencies of target displayrace
+[ 50%] Built target displayrace
+Consolidate compiler generated dependencies of target analysis
+[ 75%] Built target analysis
+[ 87%] Building CXX object marking/CMakeFiles/markingTest.dir/utest2.cpp.o
+[100%] Linking CXX executable markingTest
+[100%] Built target markingTest
+----------------------------------------------------------------------
+---------------------------------------------------------------------
+Executing tests distributed with quiz
+---------------------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from AnalysisTest
+[ RUN      ] AnalysisTest.DragRace
+[       OK ] AnalysisTest.DragRace (23436 ms)
+[ RUN      ] AnalysisTest.StopAllCars
+[       OK ] AnalysisTest.StopAllCars (27597 ms)
+[----------] 2 tests from AnalysisTest (51033 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (51033 ms total)
+[  PASSED  ] 2 tests.
+---------------------------------------------------------------------
+Executing marking test
+---------------------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from AnalysisTest
+[ RUN      ] AnalysisTest.SortOdo
+/home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz2/a1/marking/utest2.cpp:26: Failure
+      Expected: order.at(0)
+      Which is: 2
+To be equal to: 0
+/home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz2/a1/marking/utest2.cpp:27: Failure
+      Expected: order.at(1)
+      Which is: 1
+To be equal to: 2
+/home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz2/a1/marking/utest2.cpp:28: Failure
+      Expected: order.at(2)
+      Which is: 0
+To be equal to: 1
+[  FAILED  ] AnalysisTest.SortOdo (0 ms)
+[ RUN      ] AnalysisTest.zeroTopZeroRace
+[       OK ] AnalysisTest.zeroTopZeroRace (26313 ms)
+[----------] 2 tests from AnalysisTest (26313 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (26313 ms total)
+[  PASSED  ] 1 test.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] AnalysisTest.SortOdo
+
+ 1 FAILED TEST
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+ A2 
+---------------------------------------------------------------------
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/src/gtest/libgtest.a  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz2/a2/build
+**********************************************************************
+Making tests distributed with quiz
+----------------------------------------------------------------------
+[ 25%] Building CXX object marking/CMakeFiles/container_ops_Marking.dir/__/container_ops.cpp.o
+[ 50%] Linking CXX static library libcontainer_ops_Marking.a
+[ 50%] Built target container_ops_Marking
+[ 75%] Building CXX object marking/CMakeFiles/selfTest.dir/self.cpp.o
+[100%] Linking CXX executable selfTest
+[100%] Built target selfTest
+----------------------------------------------------------------------
+Making marking test
+----------------------------------------------------------------------
+Consolidate compiler generated dependencies of target container_ops_Marking
+[ 50%] Built target container_ops_Marking
+[ 75%] Building CXX object marking/CMakeFiles/markingTest.dir/utest.cpp.o
+[100%] Linking CXX executable markingTest
+[100%] Built target markingTest
+----------------------------------------------------------------------
+Running tests...
+Test project /home/student/git/pfms-2022a-/pfms-2022a-DARKMOONlite/quizzes/quiz2/a2/build
+    Start 1: Q2A2
+1/1 Test #1: Q2A2 .............................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.00 sec
+---------------------------------------------------------------------
+Executing tests distributed with quiz
+---------------------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from FunctionsTest
+[ RUN      ] FunctionsTest.ModifyingFrontOfDeque
+[       OK ] FunctionsTest.ModifyingFrontOfDeque (0 ms)
+[----------] 1 test from FunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+---------------------------------------------------------------------
+Executing marking test
+---------------------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from FunctionsTest
+[ RUN      ] FunctionsTest.BubbleSort
+[       OK ] FunctionsTest.BubbleSort (0 ms)
+[----------] 1 test from FunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.

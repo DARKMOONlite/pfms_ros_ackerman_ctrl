@@ -1,0 +1,89 @@
+# 
+# Desc : This is a modified stage model of the robotics lab in The University of Auckland,New Zealand
+# Authors : Nick Wong, Jui Chun(Jimmy) Peng Hsu
+# Date : 21 July 2008
+#
+
+# defines Pioneer-like robots
+include "pioneer.inc"
+
+# defines 'map' object used for floorplans
+include "map.inc"
+
+# defines sick laser
+include "sick.inc"
+
+# defines the models used in the lab
+include "uoa_robotics_lab_models.inc"
+
+# set the resolution of the underlying raytrace model in meters
+resolution 0.02
+
+interval_sim 100  # simulation timestep in milliseconds
+interval_real 100  # real-time interval between simulation updates in milliseconds 
+
+paused 0
+
+# configure the GUI window
+#size [ 745.000 448.000 ] 
+#center [-7.010 5.960] 
+#rotate [ 0.920 -0.430 ]
+#scale 28.806 
+
+
+# load an environment bitmap
+floorplan
+(
+  name "hospital_section"
+  # The actual size of the lab
+  size [40.000 18.000 0.600] 
+  pose [-2.000 0.000 0.000 0.000]
+  bitmap "bitmaps/sparse_section.png" 
+  map_resolution 0.02
+)
+
+define smallCylinder model
+(
+      bitmap "bitmaps/dome.png"
+      size [0.500 0.500 0.500]
+      color_rgba [ 1.0 0 1.0 0.25 ]
+)
+
+define bigCylinder model
+(
+      bitmap "bitmaps/dome.png"
+      size [1.500 1.500 1.000]
+      color_rgba [ 1.0 0 1.0 0.25 ]
+)
+
+define autorob pioneer2dx_base_no_sonar
+(
+ color "red"
+ fancysicklaser( pose [ 0.040 0.000 0.000 0.000 ] samples 32 ) 
+
+ blinkenlight( pose [ 0.150 0.100 0.000 0.000 ] color "red" )
+ blinkenlight( pose [ 0.150 0.000 0.000 0.000 ] color "green" )
+ blinkenlight( pose [ 0.150 -0.100 0.000  0.000 ] color "blue" )
+
+)
+
+autorob( pose [0.000 0.000 0.000 0.000] color "red" name "r0" )
+autorob( pose [-13.400 3.000 0.000 -90.000] color "green" name "r1" )
+autorob( pose [13.400 3.000 0.000 90.000] color "magenta" name "r2" )
+
+
+define cab bigCabin
+(
+)
+
+# 1st big cabinet used to store robots
+cab(pose [ 7.617 -3.603 0.000 -90.000 ] color_rgba [ 1.0 0 1.0 0.25 ] )
+# 2nd big cabinet used to store robots
+cab(pose [ 3.667 3.567 0.000 0.000 ] color_rgba [ 1.0 0 1.0 0.25 ])
+
+# Big cylinder blob
+bigCylinder(pose [3.000 0.333 0.000 0.000])
+
+# Small cylinder blob
+smallCylinder(pose [13.094 -4.680 0.000 0.000])
+
